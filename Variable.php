@@ -14,16 +14,4 @@
     echo "sum = ".$sum. "<br>";
     $avg = $sum / 4;
     echo "avg = ".$avg;
-
-
-
-
-
-
-
-
-
-
-
-
     ?>
