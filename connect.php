@@ -1,15 +1,13 @@
 <?php
 
-$con=new mysqli('localhost',
+$con=new mysqli('localhost','root','',
 'crudoperation');
 
 if($con) {
-    echo "Connection successfull";
-}else{
-    die(mysqli_errno($con));
-
-
+    die(mysqli_error($con));
 }
+
+
 
 
 

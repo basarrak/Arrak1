@@ -1,3 +1,22 @@
+<?php
+include 'connect.php';
+if (insstr ($_POST['submit'])){
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $mobile=$_POST['mobile'];
+    $password=$_POST['password'];
+
+    $sql="insert into "
+}
+?>
+
+
+
+
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,7 +48,7 @@
     <input type="password" class="form-control" placeholder="Enter your password" name="password" autocomplete="off">
 </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" name=submit>Submit</button>
 </form>
     </div>
 
