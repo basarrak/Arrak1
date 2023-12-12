@@ -1,4 +1,7 @@
-<?php include  ?>
+<?php
+     include 'connect.php';  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +13,30 @@
 <body>
         <H1>ข้อมูลพนักงาน</H1>
         <tr> 
+
             <table>
             <th>Username</th> 
             <th>City</th> 
             <th>Webserver</th> 
             <th>role</th> 
-            </tr>
-            <tr>
-                
-            </tr>
+
+        </tr>
+    <?php 
+
+        $sql = "SELECT * FROM employee";
+        $result = mysqli_query($conn,$sql);
+        while($row = mysqli_fetch_assoc($result)){
+            echo"
+                <tr>
+                    <td>".$row["username"]."</td>
+                    <td>".$row["city"]."</td>
+                    <td>".$row["webserver"]."</td>
+                    <td>".$row["role"]."</td>
+                </tr>
+                ";
+            }
+        ?>
+
             </table>
 
            
