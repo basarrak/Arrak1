@@ -6,12 +6,12 @@
     $role = $_POST['role'];
 
 
-    $servername = 'localhost:8080';
-    $username = 'root';
-    $password = "";
+    $servername = "localhost:8080";
+    $username = "root";
+    $password1 = "";
     $dbname = "db_employee";
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername, $username, $password1, $dbname);
     if ($conn->connect_error) {
         die("". $conn->connect_error);
     }
